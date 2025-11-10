@@ -1,558 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Dr. João Silva — Advogado | Direito Civil & Trabalhista</title>
-    <meta
-      name="description"
-      content="Site profissional do Dr. João Silva, advogado especialista em Direito Civil e Trabalhista. Atendimento personalizado, consultoria e atuação judicial."
-    />
-    <meta name="author" content="Dr. João Silva" />
-    <!-- Open Graph -->
-    <meta property="og:title" content="Dr. João Silva — Advogado" />
-    <meta
-      property="og:description"
-      content="Atuação em Direito Civil e Trabalhista. Atendimento humano e estratégico."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. João Silva — Advogado</title>
+  <meta name="description" content="Site simples do Dr. João Silva — Direito Civil e Trabalhista." />
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#mainNav"
-    data-bs-offset="80"
-    tabindex="0"
-  >
-    <!-- Navbar -->
-    <nav
-      id="mainNav"
-      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
-      aria-label="Navegação principal"
-    >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-          <div class="brand-avatar" aria-hidden="true">JS</div>
-          <div class="d-none d-md-block">
-            <div class="fw-semibold">Dr. João Silva</div>
-            <div class="small text-muted">Advogado • OAB 00.000</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <div class="brand-avatar">JS</div>
+        <div class="d-none d-md-block">
+          <div class="fw-semibold">Dr. João Silva</div>
+          <div class="small text-muted">Advogado • OAB 00.000</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="h2 fw-bold">Defesa dedicada. Resultado com responsabilidade.</h1>
+          <p class="text-muted">Atuação em Direito Civil e Trabalhista. Atendimento claro, estratégico e ético.</p>
+
+          <div class="mt-3">
+            <a class="btn btn-primary me-2" href="#contato">Agende uma consulta</a>
+            <a class="btn btn-outline-primary" href="#areas">Áreas de atuação</a>
           </div>
-        </a>
+        </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Abrir menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#areas">Áreas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experiencia">Experiência</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#depoimentos">Depoimentos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="./advogado.jpeg"
+               alt="Advogado" class="img-fluid rounded">
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero -->
-    <header id="home" class="hero bg-hero d-flex align-items-center">
+  <main>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
       <div class="container">
-        <div class="row align-items-center gy-4">
+        <h2>Sobre</h2>
+        <p class="text-muted">Sou <strong>Dr. João Silva</strong>, advogado com mais de 10 anos de experiência em Direito Civil e Trabalhista. Trabalho com consultoria, contratos e contencioso, buscando soluções práticas e responsáveis para cada cliente.</p>
+
+        <ul class="list-unstyled">
+          <li>• Atendimento personalizado</li>
+          <li>• Comunicação direta</li>
+          <li>• Ética profissional</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Áreas -->
+    <section id="areas" class="py-4 bg-light">
+      <div class="container">
+        <h2>Áreas de Atuação</h2>
+        <div class="row mt-3">
+          <div class="col-md-6 mb-3">
+            <div class="p-3 bg-white rounded border">Direito Civil — contratos, responsabilidade civil, indenizações.</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-3 bg-white rounded border">Direito do Trabalho — reclamações trabalhistas, acordos e rescisões.</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-3 bg-white rounded border">Consultoria & Contratos — análise e elaboração de contratos.</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-3 bg-white rounded border">Mediação & Negociação — soluções extrajudiciais.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="row mt-3">
           <div class="col-lg-7">
-            <h1 class="display-5 fw-bold">
-              Defesa dedicada. Resultado com responsabilidade.
-            </h1>
-            <p class="lead text-muted">
-              Atuação em Direito Civil, Direito do Trabalho e consultoria para
-              pessoas físicas. Atendimento humano, estratégia clara e
-              compromisso com a ética profissional.
-            </p>
+            <form id="contactForm" class="needs-validation p-3 bg-white rounded" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Nome*</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                  <div class="invalid-feedback">Informe seu nome.</div>
+                </div>
 
-            <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-primary btn-lg" href="#contato"
-                ><i class="bi bi-calendar-plus-fill me-2"></i>Agende uma
-                consulta</a
-              >
-              <a class="btn btn-outline-primary btn-lg" href="#areas"
-                ><i class="bi bi-briefcase me-2"></i>Ver áreas de atuação</a
-              >
-              <a
-                class="btn btn-link text-decoration-none align-items-center"
-                href="#sobre"
-                ><i class="bi bi-info-circle me-2"></i>Saiba mais</a
-              >
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-mail*</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Informe um e-mail válido.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Mensagem*</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  <div class="invalid-feedback">Descreva sua solicitação.</div>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                  <span id="formFeedback" class="ms-3 small" role="status" aria-live="polite"></span>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <p class="small text-muted mb-0">Ou envie um e-mail para <a href="mailto:contato@advogadoexemplo.com">contato@advogadoexemplo.com</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="col-lg-5">
+            <div class="p-3 bg-white rounded border">
+              <h5>Escritório</h5>
+              <p class="mb-1">Endereço: Rua Exemplo, 123 — Sala 45</p>
+              <p class="mb-1">Telefone: (00) 0 0000-0000</p>
+              <p class="mb-1">E-mail: contato@advogadoexemplo.com</p>
             </div>
-
-            <ul class="list-unstyled text-muted mt-4 small">
-              <li>
-                <i class="bi bi-check2-circle text-success me-2"></i>Atendimento
-                personalizado
-              </li>
-              <li>
-                <i class="bi bi-check2-circle text-success me-2"></i>Relatórios
-                claros e objetivos
-              </li>
-              <li>
-                <i class="bi bi-check2-circle text-success me-2"></i>Ética e
-                transparência
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-5 text-center">
-            <figure class="hero-figure">
-              <img
-                src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f9c2b45b8b4c1c8f3e8b2f3a1e3f6a8"
-                alt="Advogado em escritório"
-                class="img-fluid rounded shadow-lg"
-              />
-              <figcaption class="text-muted small mt-2">
-                Atendimento presencial e remoto
-              </figcaption>
-            </figure>
-          </div>
+          </aside>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Sobre -->
-      <section id="sobre" class="py-5">
-        <div class="container">
-          <div class="row gy-4 align-items-center">
-            <div class="col-lg-8">
-              <h2>Sobre</h2>
-              <p class="mb-3">
-                Sou <strong>Dr. João Silva</strong>, advogado com mais de 10
-                anos de experiência em Direito Civil e Trabalhista. Atuo em
-                consultoria preventiva, elaboração de contratos e contencioso,
-                com foco em soluções eficientes que preservem o direito e o
-                patrimônio do cliente.
-              </p>
+  </main>
 
-              <div class="row row-cols-1 row-cols-md-2 g-2 mt-3">
-                <div class="col">
-                  <i class="bi bi-check2-circle text-primary me-2"></i
-                  >Comunicação clara e transparente
-                </div>
-                <div class="col">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>Atuação
-                  estratégica e personalizada
-                </div>
-                <div class="col">
-                  <i class="bi bi-check2-circle text-primary me-2"></i
-                  >Relatórios e acompanhamento contínuo
-                </div>
-                <div class="col">
-                  <i class="bi bi-check2-circle text-primary me-2"></i
-                  >Atendimento presencial e remoto
-                </div>
-              </div>
-            </div>
+  <!-- Footer -->
+  <footer class="py-3 bg-white border-top">
+    <div class="container d-flex justify-content-between">
+      <div>&copy; <span id="year"></span> Dr. João Silva</div>
+      <div class="text-muted small">Informativo — não substitui consulta jurídica</div>
+    </div>
+  </footer>
 
-            <aside class="col-lg-4">
-              <div class="d-grid gap-3">
-                <div
-                  class="p-3 bg-white rounded shadow-sm text-center stat-card"
-                >
-                  <div class="fs-4 fw-bold">+10</div>
-                  <div class="text-muted small">Anos de experiência</div>
-                </div>
-                <div
-                  class="p-3 bg-white rounded shadow-sm text-center stat-card"
-                >
-                  <div class="fs-4 fw-bold">+250</div>
-                  <div class="text-muted small">Processos acompanhados</div>
-                </div>
-                <div
-                  class="p-3 bg-white rounded shadow-sm text-center stat-card"
-                >
-                  <div class="fs-4 fw-bold">98%</div>
-                  <div class="text-muted small">Satisfação média</div>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Áreas -->
-      <section id="areas" class="py-5 bg-light">
-        <div class="container">
-          <h2>Áreas de Atuação</h2>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mt-3">
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-file-earmark-text me-2"></i>Direito Civil
-                  </h5>
-                  <p class="card-text small mb-0">
-                    Contratos, responsabilidade civil, indenizações, inventários
-                    e planejamento sucessório.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-people-fill me-2"></i>Direito do Trabalho
-                  </h5>
-                  <p class="card-text small mb-0">
-                    Reclamações trabalhistas, acordos, rescisões e defesa de
-                    empregadores e empregados.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-pencil-square me-2"></i>Consultoria e
-                    Contratos
-                  </h5>
-                  <p class="card-text small mb-0">
-                    Análise e elaboração de contratos, pareceres e
-                    acompanhamento preventivo para reduzir riscos.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-chat-dots-fill me-2"></i>Mediação e
-                    Negociação
-                  </h5>
-                  <p class="card-text small mb-0">
-                    Soluções extrajudiciais eficientes para poupar tempo e
-                    custos.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experiência -->
-      <section id="experiencia" class="py-5">
-        <div class="container">
-          <h2>Experiência & Resultados</h2>
-          <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm p-3">
-                <small class="text-muted">2022</small>
-                <p class="mb-0">
-                  Atuação em acordos coletivos representando trabalhadores de
-                  pequenas empresas, com alto índice de acordo favorável.
-                </p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm p-3">
-                <small class="text-muted">2020</small>
-                <p class="mb-0">
-                  Defesa em ação de responsabilidade civil com acordo favorável
-                  que preservou o patrimônio do cliente.
-                </p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0 shadow-sm p-3">
-                <small class="text-muted">2016</small>
-                <p class="mb-0">
-                  Fundação do escritório com foco em atendimento pessoal e
-                  estratégias preventivas.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Depoimentos -->
-      <section id="depoimentos" class="py-5 bg-light">
-        <div class="container">
-          <h2>Depoimentos</h2>
-          <div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
-            <div class="col">
-              <blockquote class="blockquote p-4 bg-white rounded shadow-sm">
-                <p class="mb-2">
-                  "Profissional atencioso e muito claro nas orientações.
-                  Consegui resolver meu processo com tranquilidade."
-                </p>
-                <footer class="blockquote-footer">Maria A.</footer>
-              </blockquote>
-            </div>
-            <div class="col">
-              <blockquote class="blockquote p-4 bg-white rounded shadow-sm">
-                <p class="mb-2">
-                  "Ótima comunicação e compromisso com o cliente. Recomendo para
-                  questões trabalhistas."
-                </p>
-                <footer class="blockquote-footer">Carlos P.</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq" class="py-5">
-        <div class="container">
-          <h2>Perguntas Frequentes</h2>
-          <div class="accordion mt-3" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faqOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  Como agendo uma consulta?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="faqOne"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Você pode agendar pelo formulário abaixo, ligar para o
-                  escritório ou enviar um e-mail. Informaremos disponibilidade e
-                  formato (presencial ou online).
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faqTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Qual o primeiro passo em uma reclamação trabalhista?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="faqTwo"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Reunir documentos (contrato, holerites, comunicações) para
-                  análise. Em seguida, faremos um parecer inicial e proposta de
-                  estratégia.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contato -->
-      <section id="contato" class="py-5 bg-white">
-        <div class="container">
-          <h2>Contato</h2>
-          <div class="row gy-4 mt-3">
-            <div class="col-lg-7">
-              <form
-                id="contactForm"
-                class="needs-validation p-4 rounded-3 bg-light shadow-sm"
-                novalidate
-              >
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label for="name" class="form-label">Nome*</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      name="name"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Por favor informe seu nome.
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">E-mail*</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Por favor informe um e-mail válido.
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="phone" class="form-label">Telefone</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="(00) 0 0000-0000"
-                    />
-                  </div>
-
-                  <div class="col-12">
-                    <label for="message" class="form-label">Mensagem*</label>
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      name="message"
-                      rows="5"
-                      required
-                    ></textarea>
-                    <div class="invalid-feedback">
-                      Descreva seu caso brevemente.
-                    </div>
-                  </div>
-
-                  <div class="col-12 d-flex align-items-center gap-2">
-                    <button class="btn btn-primary" type="submit">
-                      <i class="bi bi-envelope-fill me-2"></i>Enviar mensagem
-                    </button>
-                    <div
-                      id="formFeedback"
-                      class="small"
-                      role="status"
-                      aria-live="polite"
-                    ></div>
-                  </div>
-
-                  <div class="col-12">
-                    <p class="small text-muted mb-0">
-                      Ou envie um e-mail diretamente para
-                      <a href="mailto:contato@advogadoexemplo.com"
-                        >contato@advogadoexemplo.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <aside class="col-lg-5">
-              <div class="p-3 bg-light rounded-3 shadow-sm">
-                <h5>Escritório</h5>
-                <p class="mb-1">
-                  Endereço: Rua Exemplo, 123 — Sala 45, Centro — Cidade/UF
-                </p>
-                <p class="mb-1">Telefone: (00) 0 0000-0000</p>
-                <p class="mb-1">
-                  E-mail:
-                  <a href="mailto:contato@advogadoexemplo.com"
-                    >contato@advogadoexemplo.com</a
-                  >
-                </p>
-
-                <h6 class="mt-3">Horário de atendimento</h6>
-                <p class="mb-1">Seg — Sex: 09:00 — 18:00</p>
-
-                <h6 class="mt-3">Localização</h6>
-                <div class="map-placeholder mb-2">
-                  Mapa (insira embed do Google Maps)
-                </div>
-
-                <div class="mt-2 small text-muted">
-                  Este site tem caráter informativo e não substitui consulta
-                  jurídica. Envie informações confidenciais apenas após contato
-                  inicial.
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-white border-top">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
-      >
-        <div class="mb-2 mb-md-0">
-          &copy; <span id="year"></span> Dr. João Silva — Todos os direitos
-          reservados.
-        </div>
-        <div>
-          <a href="#" class="me-3 text-decoration-none"
-            ><i class="bi bi-linkedin"></i> LinkedIn</a
-          >
-          <a href="#" class="text-decoration-none"
-            ><i class="bi bi-instagram"></i> Instagram</a
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap 5 JS bundle (Popper included) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom script -->
-    <script src="script.js"></script>
-  </body>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
 </html>
