@@ -3,25 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dr. João Silva — Advogado</title>
-  <meta name="description" content="Site simples do Dr. João Silva — Direito Civil e Trabalhista." />
+  <title>GameHub — Black Friday</title>
+  <meta name="description" content="GameHub - Promoções de Black Friday em jogos e acessórios. Até 70% OFF!" />
 
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-        <div class="brand-avatar">CSS</div>
+        <div class="brand-avatar">GH</div>
         <div class="d-none d-md-block">
-          <div class="fw-semibold">Dr. Carlos Silva Santos</div>
-          <div class="small text-muted">Advogado • OAB 00.000</div>
+          <div class="fw-bold"></div>
+          <div class="small text-muted">Black Friday</div>
         </div>
       </a>
 
@@ -33,8 +31,8 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -42,22 +40,21 @@
   </nav>
 
   <!-- Hero -->
-  <header id="home" class="hero d-flex align-items-center">
+  <header id="home" class="hero text-white d-flex align-items-center">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7">
-          <h1 class="h2 fw-bold">Defesa dedicada. Resultado com responsabilidade.</h1>
-          <p class="text-muted">Atuação em Direito Civil e Trabalhista. Atendimento claro, estratégico e ético.</p>
-
+          <h1 class="display-5 fw-bold">Black Friday GameHub — Até 70% OFF</h1>
+          <p class="lead text-white-50">Ofertas imperdíveis em jogos, consoles e acessórios por tempo limitado. Garanta já seus títulos favoritos.</p>
           <div class="mt-3">
-            <a class="btn btn-primary me-2" href="#contato">Agende uma consulta</a>
-            <a class="btn btn-outline-primary" href="#areas">Áreas de atuação</a>
+            <a class="btn btn-warning btn-lg me-2" href="#ofertas">Ver Ofertas</a>
+            <a class="btn btn-outline-light btn-lg" href="#produtos">Ver Produtos</a>
           </div>
+          <p class="mt-3 small text-white-50">Envio rápido • Pagamento seguro • Estoque limitado</p>
         </div>
 
         <div class="col-lg-5 text-center mt-4 mt-lg-0">
-          <img src="./advogado.jpeg"
-               alt="Advogado" class="img-fluid rounded">
+          <img src="./img/banner.webp" alt="Jogos e acessórios" class="img-fluid rounded">
         </div>
       </div>
     </div>
@@ -65,85 +62,163 @@
 
   <main>
 
-    <!-- Sobre -->
-    <section id="sobre" class="py-5">
+    <!-- Produtos -->
+    <section id="produtos" class="py-5">
       <div class="container">
-        <h2>Sobre</h2>
-        <p class="text-muted">Sou <strong>Dr. João Silva</strong>, advogado com mais de 10 anos de experiência em Direito Civil e Trabalhista. Trabalho com consultoria, contratos e contencioso, buscando soluções práticas e responsáveis para cada cliente.</p>
+        <h2>Produtos em Destaque</h2>
+        <p class="text-muted">Seleção com descontos especiais para a Black Friday.</p>
 
-        <ul class="list-unstyled">
-          <li>• Atendimento personalizado</li>
-          <li>• Comunicação direta</li>
-          <li>• Ética profissional</li>
-        </ul>
+        <div class="row g-3 mt-3">
+          <!-- Produto 1 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/reddead.png" class="card-img-top" alt="Jogo A">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Jogo A — Edição Ultimate</h5>
+                <p class="mb-1 text-muted small"><del>R$ 249,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 99,90 <span class="badge bg-danger ms-2">-60%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Jogo A — Edição Ultimate" data-price="R$ 99,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 2 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/ps5.jpg" class="card-img-top" alt="Console X">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Console X</h5>
+                <p class="mb-1 text-muted small"><del>R$ 2.499,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 1.499,90 <span class="badge bg-danger ms-2">-40%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Console X" data-price="R$ 1.499,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/headset.webp" class="card-img-top" alt="Headset Pro">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Headset Pro</h5>
+                <p class="mb-1 text-muted small"><del>R$ 599,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 249,90 <span class="badge bg-danger ms-2">-58%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Headset Pro" data-price="R$ 249,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 4 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/controle.jpg" class="card-img-top" alt="Controle Elite">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Controle Elite</h5>
+                <p class="mb-1 text-muted small"><del>R$ 399,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 179,90 <span class="badge bg-danger ms-2">-55%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Controle Elite" data-price="R$ 179,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 5 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/death_stranding.jpg" class="card-img-top" alt="Jogo B">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Jogo B — Deluxe</h5>
+                <p class="mb-1 text-muted small"><del>R$ 199,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 79,90 <span class="badge bg-danger ms-2">-60%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Jogo B — Deluxe" data-price="R$ 79,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 6 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./img/kumara.jpeg" class="card-img-top" alt="Teclado RGB">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Teclado RGB</h5>
+                <p class="mb-1 text-muted small"><del>R$ 299,90</del></p>
+                <p class="fs-5 fw-bold text-danger mb-3">R$ 129,90 <span class="badge bg-danger ms-2">-57%</span></p>
+
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-success buy-btn" data-product="Teclado RGB" data-price="R$ 129,90">Comprar</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- Áreas -->
-    <section id="areas" class="py-4 bg-light">
+    <!-- Ofertas rápidas -->
+    <section id="ofertas" class="py-4 bg-dark text-white">
       <div class="container">
-        <h2>Áreas de Atuação</h2>
-        <div class="row mt-3">
-          <div class="col-md-6 mb-3">
-            <div class="p-3 bg-white rounded border">Direito Civil — contratos, responsabilidade civil, indenizações.</div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="p-3 bg-white rounded border">Direito do Trabalho — reclamações trabalhistas, acordos e rescisões.</div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="p-3 bg-white rounded border">Consultoria & Contratos — análise e elaboração de contratos.</div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="p-3 bg-white rounded border">Mediação & Negociação — soluções extrajudiciais.</div>
-          </div>
-        </div>
+        <h3>Ofertas Relâmpago</h3>
+        <p class="mb-0 small text-white-50">Fique ligado — ofertas por tempo limitado, enquanto durar o estoque.</p>
       </div>
     </section>
 
     <!-- Contato -->
     <section id="contato" class="py-5">
       <div class="container">
-        <h2>Contato</h2>
+        <h2>Contato / Pedido</h2>
         <div class="row mt-3">
           <div class="col-lg-7">
-            <form id="contactForm" class="needs-validation p-3 bg-white rounded" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Nome*</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                  <div class="invalid-feedback">Informe seu nome.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email" class="form-label">E-mail*</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                  <div class="invalid-feedback">Informe um e-mail válido.</div>
-                </div>
-
-                <div class="col-12">
-                  <label for="message" class="form-label">Mensagem*</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                  <div class="invalid-feedback">Descreva sua solicitação.</div>
-                </div>
-
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Enviar</button>
-                  <span id="formFeedback" class="ms-3 small" role="status" aria-live="polite"></span>
-                </div>
-
-                <div class="col-12 mt-2">
-                  <p class="small text-muted mb-0">Ou envie um e-mail para <a href="mailto:contato@advogadoexemplo.com">contato@advogadoexemplo.com</a></p>
-                </div>
+            <form id="contactForm" class="p-3 bg-white rounded border" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome*</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback">Informe seu nome.</div>
               </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail*</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Informe um e-mail válido.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem / Pedido*</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <div class="invalid-feedback">Descreva sua solicitação.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <span id="formFeedback" class="ms-3 small" role="status" aria-live="polite"></span>
             </form>
           </div>
 
           <aside class="col-lg-5">
             <div class="p-3 bg-white rounded border">
-              <h5>Escritório</h5>
-              <p class="mb-1">Endereço: Rua Exemplo, 123 — Sala 45</p>
+              <h5>Atendimento</h5>
+              <p class="mb-1">E-mail: <a href="mailto:contato@gamehubexemplo.com">contato@gamehubexemplo.com</a></p>
               <p class="mb-1">Telefone: (00) 0 0000-0000</p>
-              <p class="mb-1">E-mail: contato@advogadoexemplo.com</p>
+              <p class="small text-muted mb-0">Horário: Seg–Sex 10:00–18:00</p>
             </div>
           </aside>
         </div>
@@ -153,10 +228,10 @@
   </main>
 
   <!-- Footer -->
-  <footer class="py-3 bg-white border-top">
+  <footer class="py-3 bg-dark text-white border-top">
     <div class="container d-flex justify-content-between">
-      <div>&copy; <span id="year"></span> Dr. João Silva</div>
-      <div class="text-muted small">Informativo — não substitui consulta jurídica</div>
+      <div>© <span id="year"></span> GameHub</div>
+      <div class="small text-white-50">Black Friday — Estoque limitado</div>
     </div>
   </footer>
 

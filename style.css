@@ -1,7 +1,8 @@
 :root{
-  --primary: #0b5cff;
-  --bg: #f8f9fb;
-  --muted: #6b7280;
+  --bg-dark: #0b0b0d;
+  --accent: #ffcb05; /* amarelo Black Friday */
+  --muted: #9aa0a6;
+  --card: #0f1720;
 }
 
 /* Base */
@@ -10,30 +11,54 @@ html,body{height:100%}
 body{
   margin:0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background:var(--bg);
-  color:#0f1724;
+  background: #070708;
+  color: #e9eef6;
 }
 
-/* Brand */
+/* Navbar brand */
 .brand-avatar{
-  width:48px;height:48px;border-radius:8px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;
+  width:44px;height:44px;border-radius:8px;background:var(--accent);color:#000;display:flex;align-items:center;justify-content:center;font-weight:700;
 }
 
 /* Hero */
-.hero{padding:3.5rem 0;background:linear-gradient(90deg, rgba(11,92,255,0.04), rgba(11,127,255,0.01));}
-.hero img{max-height:320px;object-fit:cover;border-radius:6px}
+.hero{
+  padding:3.5rem 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.65), rgba(11,11,13,0.9));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.hero .lead{color:#dbe6ff}
 
-/* Sections */
-section{padding:1.5rem 0}
-.bg-light{background:#f3f6fb}
+/* Cards */
+.card{border-radius:8px; overflow:hidden}
+.card-img-top{height:180px;object-fit:cover}
 
-/* Simple card */
-.bg-white{background:#fff}
-.border{border:1px solid rgba(15,23,36,0.06)}
-.rounded{border-radius:8px}
+/* Prices */
+.text-danger{color:#ff6b6b!important}
+
+/* Badges */
+.badge.bg-danger{background:#ff3b3b!important;color:#fff}
+
+/* Section spacing */
+section{padding:1.75rem 0}
+
+/* Contact card */
+.bg-white{background:#0e1114; color:#e9eef6}
+.border{border:1px solid rgba(255,255,255,0.04)}
+.form-control{background:#0b0d0f;color:#e9eef6;border:1px solid rgba(255,255,255,0.04)}
+.form-control:focus{box-shadow:none;border-color:var(--accent)}
 
 /* Footer */
-footer{background:transparent}
+footer{background:#060607}
 
-/* Ensure no extra transitions/animations */
+/* Links */
+a { color: var(--accent); }
+a:hover { color: #ffd84d; text-decoration: none }
+
+/* Ensure no transitions/animations (site intentionally simple) */
 *{transition:none!important;animation:none!important}
+
+/* Responsive tweaks */
+@media (max-width:767px){
+  .card-img-top{height:140px}
+  .hero .display-5{font-size:1.5rem}
+}
